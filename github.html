@@ -19,9 +19,28 @@ img {
 
 
 	<!-- 相对路径图片 -->
-	<img src="10.png"><br>
+	<img src="10.png">
 
 	<!--Gitalk评论start  -->
+
+
+
+	<div id="container"></div>
+	<link rel="stylesheet"
+		href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			id : '', // 可选。这个选项不写（不是留空），默认为 location.href
+			owner : 'FrontierQ',
+			repo : 'FrontierQ.github.io',
+			oauth : {
+				client_id : '830173dc2bcaf7208616',
+				client_secret : '87a9de06260b05d5b98424aff0232f156e3188fd',
+			},
+		});
+		gitment.render('container'); //container为你要显示评论的id
+	</script>
 
 	<!-- Gitalk end -->
 </body>
