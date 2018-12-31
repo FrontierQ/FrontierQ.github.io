@@ -1,8 +1,8 @@
 theme: jekyll-theme-architect
 gitalk:
   enable: true    #是否开启评论
-  clientID: 4935f01c2e2673e73315        #生成的clientID
-  clientSecret: 70433cb3e6dcb3a41805b85a7ebe6d8c9ea528d2    #生成的clientSecret
+  clientID: 830173dc2bcaf7208616        #生成的clientID
+  clientSecret: 87a9de06260b05d5b98424aff0232f156e3188fd    #生成的clientSecret
   repo: FrontierQ.github.io    #仓库名称
   owner: FrontierQ    #github用户名
   admin: FrontierQ	
