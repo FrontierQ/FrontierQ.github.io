@@ -23,25 +23,42 @@ img {
 
 	<!--Gitalk评论start  -->
 
-	<!-- 引入Gitalk评论插件  -->
+	<!-- 	<!-- 引入Gitalk评论插件  -->
 	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 	<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
 	<div id="gitalk-container"></div>
-	<!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-	<!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
-	<!-- <script src="https://mengchenchen.github.io/js/md5.min.js"></script> -->
-	<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+	引入一个生产md5的js，用于对id值进行处理，防止其过长 Thank
+	DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538
+	<script src="https://mengchenchen.github.io/js/md5.min.js"></script>
 	<script type="text/javascript">
 		var gitalk = new Gitalk({
-			clientID : '你的client id',
-			clientSecret : '你的 client Secret',
-			repo : 'mengchenchen.github.io',
-			owner : 'mengchenchen',
-			admin : [ 'mengchenchen' ],
+			clientID : '830173dc2bcaf7208616',
+			clientSecret : '87a9de06260b05d5b98424aff0232f156e3188fd',
+			repo : 'frontier.github.io',
+			owner : 'frontierq',
+			admin : [ 'frontier' ],
 			distractionFreeMode : true,
 			id : md5(location.pathname),
 		});
 		gitalk.render('gitalk-container');
+	</script>
+	-->
+
+	<div id="container"></div>
+	<link rel="stylesheet"
+		href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+		var gitment = new Gitment({
+			id : '', // 可选。这个选项不写（不是留空），默认为 location.href
+			owner : 'FrontierQ',
+			repo : 'FrontierQ.github.io',
+			oauth : {
+				client_id : '830173dc2bcaf7208616',
+				client_secret : '87a9de06260b05d5b98424aff0232f156e3188fd',
+			},
+		});
+		gitment.render('container'); //container为你要显示评论的id
 	</script>
 
 	<!-- Gitalk end -->
